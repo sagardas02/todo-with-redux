@@ -1,0 +1,120 @@
+
+.container{
+ 
+}
+
+form{
+  display:block;
+  height: fit-content;
+  width: 100%;
+  margin: 50px 0px;
+  border-radius: 15px;
+  background-image: linear-gradient(to top, #2193b0 0%, #6dd5ed  100%)
+}
+
+form  input{
+padding: 10px 10px;
+margin: 10px auto;
+width: 100%;
+border: 2px solid rgba(128, 128, 128, 0.226);
+border-radius: 15px;
+outline: none;
+}
+
+form  input:focus{
+  border-color: #00d2ff;
+  outline: none;
+  }
+  form  textarea:focus{
+    border-color: #00d2ff;
+    outline: none;
+    }
+  form  textarea{
+    padding: 10px 10px;
+    margin: 10px auto;
+    height: 70px;
+    width: 80%;
+    border: 2px solid rgba(128, 128, 128, 0.226);
+    border-radius: 15px;
+    outline: none;
+    resize: none;
+    }
+
+    form  button{
+      padding: 0px 0px;
+      margin: 19px 6px;
+      height: 49px;
+      width: 100%;
+      border: none;
+      border-radius: 15px;
+      outline: none;
+      resize: none;
+      color: white;
+      }
+      .btn-grad {
+        background-image: linear-gradient(to top, #00d2ff 0%, #3a7bd5  100%)
+      }
+       .btn-grad:hover {
+         background-position: right center; /* change the direction of the change here */
+         color: #fff;
+         text-decoration: none;
+       }
+      
+      .cards li{
+        background-color: grey;
+        margin-top: 1rem; /* mt-4 */
+        display: block; /* flex */
+        justify-content: space-between; /* justify-between */
+        align-items: center; /* items-center */
+        padding: 0.5rem 1rem; /* py-2 px-4 */
+        border-radius: 0.25rem; /* rounded */
+      }
+
+      .todo-title{
+        font-size: 30px;
+        color: white;
+      }
+
+      .todo-descp{
+        font-size: 20px;
+        color: white;
+      }
+
+      .cards input{
+        display: block; 
+        color: rgb(0, 0, 0);
+        margin: 10px 0px;
+      }
+
+      .cards input{
+        display: block; 
+        color: rgb(0, 0, 0);
+        margin: 10px 0px;
+        height: fit-content;
+        width: fit-content;
+        
+      }
+      .cards textarea{
+        display: block; 
+        color: rgb(0, 0, 0);
+        margin: 10px 0px;
+        height: fit-content;
+        width: 100%;
+        resize: none;
+      }
+
+      .cards textarea:focus{
+        border-color: #00d2ff;
+        outline: none;
+      }
+
+
+      .cards button{
+        margin: 5px 10px;
+        padding: 5px 20px;
+        background-color: rgb(51, 50, 50);
+      }
+
+      h1{
+        font-size: 30px;
+      }
