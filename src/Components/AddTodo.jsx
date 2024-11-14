@@ -35,7 +35,6 @@ function AddTodo() {
         type="text"
         className=""
         placeholder="Enter a Todo Title"
-            required
         value={title}
         required={true}
         onChange={(e)=>(setTitle(e.target.value))}
@@ -46,11 +45,7 @@ function AddTodo() {
         type="text"
         className="col-10"
         placeholder="Enter a Todo Description"
-<<<<<<< HEAD
         required={true}
-=======
-          
->>>>>>> daefb445228a1e16fad7be780e3454933c55aba6
         value={descp}
         onChange={(e)=>(setDescp(e.target.value))}
       />

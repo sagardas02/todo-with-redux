@@ -39,13 +39,13 @@ console.log(todos)
                     value={updateTitle}
                     required={true}
                     onChange={(e)=>setUpdateTitle(e.target.value)} 
-                    required
+
                     placeholder='Title'/>
                 <textarea type="text"
                     value={updateDescp}
                     required={true}
                     onChange={(e)=>setUpdateDescp(e.target.value)}
-                    required
+
                     placeholder='Description' />
                 </>
                 
