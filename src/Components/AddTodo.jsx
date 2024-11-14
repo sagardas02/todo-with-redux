@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {useDispatch} from "react-redux"
-import { addTodo } from '../TodoSlice';
+import { addTodo, deleteAllTodos} from '../TodoSlice';
+
 
 function AddTodo() {
 
@@ -15,6 +16,15 @@ function AddTodo() {
         
     }
 
+
+
+    
+    // const handleDeleteAll = () => {
+    //     console.log(deleteAllTodos())
+    //     dispatch(deleteAllTodos());
+        
+    //   };
+
   return (
     <>
     <div className='container d-flex justify-content-center'>
@@ -26,6 +36,7 @@ function AddTodo() {
         className=""
         placeholder="Enter a Todo Title"
         value={title}
+        required={true}
         onChange={(e)=>(setTitle(e.target.value))}
       />
         </div>
@@ -34,19 +45,24 @@ function AddTodo() {
         type="text"
         className="col-10"
         placeholder="Enter a Todo Description"
+        required={true}
         value={descp}
         onChange={(e)=>(setDescp(e.target.value))}
       />
       <div className="col-2">
       <button
         type="submit"
-        className="btn-grad"
+        className="btn-grad add-btn"
       >
         Add Todo
       </button>
       </div>
+      
 
         </div>
+        {/* <button 
+        className=''
+        onClick={handleDeleteAll}>Delete All Todos</button> */}
         </div>
 
 

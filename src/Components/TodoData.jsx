@@ -5,7 +5,7 @@ import {updateTodo,deleteTodo} from "../TodoSlice"
 function TodoData() {
 const [updateTitle,setUpdateTitle] = useState("");
 const [updateDescp,setUpdateDescp] = useState("");
-const [editingId,setEditingId] = useState(null)
+const [editingId,setEditingId] = useState("")
 const todos = useSelector((state)=>state.todos)
 const dispatch= useDispatch()
 
@@ -16,11 +16,11 @@ const handleEdit= (todo)=>{
 }
 const handleSave= (id)=>{
     dispatch(updateTodo({id,updateTitle,updateDescp}));
-    setEditingId(null)
+    setEditingId("")
     setUpdateDescp("");
     setUpdateTitle("");
 }
-
+console.log(todos)
   return (
     <>
     <div className="container">
@@ -37,10 +37,12 @@ const handleSave= (id)=>{
                 <>
                 <input type="text"
                     value={updateTitle}
+                    required={true}
                     onChange={(e)=>setUpdateTitle(e.target.value)} 
                     placeholder='Title'/>
                 <textarea type="text"
                     value={updateDescp}
+                    required={true}
                     onChange={(e)=>setUpdateDescp(e.target.value)}
                     placeholder='Description' />
                 </>
