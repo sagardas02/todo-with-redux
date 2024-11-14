@@ -38,10 +38,12 @@ const handleSave= (id)=>{
                 <input type="text"
                     value={updateTitle}
                     onChange={(e)=>setUpdateTitle(e.target.value)} 
+                    required
                     placeholder='Title'/>
                 <textarea type="text"
                     value={updateDescp}
                     onChange={(e)=>setUpdateDescp(e.target.value)}
+                    required
                     placeholder='Description' />
                 </>
                 
