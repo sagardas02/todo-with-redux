@@ -3,7 +3,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 const initialState = {
     todos: JSON.parse(localStorage.getItem('todos')) || [{
         id: 1 ,
-        title: "First Text",
+        title: "First Title",
         descp: "First Descp" 
     }]
 };
